@@ -1,4 +1,7 @@
-# test coverage for  [select2 (v4.0.3)](https://select2.github.io)  [![npm package](https://img.shields.io/npm/v/npmtest-select2.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-select2) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-select2.svg)](https://travis-ci.org/npmtest/node-npmtest-select2)
+# npmtest-select2
+
+#### basic test coverage for  [select2 (v4.0.3)](https://select2.github.io)  [![npm package](https://img.shields.io/npm/v/npmtest-select2.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-select2) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-select2.svg)](https://travis-ci.org/npmtest/node-npmtest-select2)
+
 #### Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.
 
 [![NPM](https://nodei.co/npm/select2.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/select2)
@@ -32,12 +35,12 @@
 ```json
 
 {
+    "name": "select2",
+    "description": "Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.",
+    "homepage": "https://select2.github.io",
     "author": {
         "name": "Kevin Brown",
         "url": "https://github.com/kevin-brown"
-    },
-    "bugs": {
-        "url": "https://github.com/select2/select2/issues"
     },
     "contributors": [
         {
@@ -45,11 +48,35 @@
             "url": "https://github.com/ivaynberg"
         }
     ],
-    "dependencies": {
-        "almond": "~0.3.1",
-        "jquery-mousewheel": "~3.1.13"
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/select2/select2.git"
     },
-    "description": "Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.",
+    "bugs": {
+        "url": "https://github.com/select2/select2/issues"
+    },
+    "keywords": [
+        "select",
+        "autocomplete",
+        "typeahead",
+        "dropdown",
+        "multiselect",
+        "tag",
+        "tagging"
+    ],
+    "license": "MIT",
+    "main": "dist/js/select2.js",
+    "files": [
+        "src",
+        "dist"
+    ],
+    "version": "4.0.3",
+    "jspm": {
+        "main": "js/select2",
+        "directories": {
+            "lib": "dist"
+        }
+    },
     "devDependencies": {
         "grunt": "^0.4.5",
         "grunt-cli": "^0.1.13",
@@ -68,50 +95,11 @@
         "grunt-sass": "^1.0.0",
         "grunt-saucelabs": "^8.6.0"
     },
-    "directories": {},
-    "dist": {
-        "shasum": "207733fe91eacb9cb1a13f12463401f472449e0f",
-        "tarball": "https://registry.npmjs.org/select2/-/select2-4.0.3.tgz"
+    "dependencies": {
+        "almond": "~0.3.1",
+        "jquery-mousewheel": "~3.1.13"
     },
-    "files": [
-        "src",
-        "dist"
-    ],
-    "gitHead": "566c7846fbf8c3b7674346f26d0ee872c0a77629",
-    "homepage": "https://select2.github.io",
-    "jspm": {
-        "main": "js/select2",
-        "directories": {
-            "lib": "dist"
-        }
-    },
-    "keywords": [
-        "select",
-        "autocomplete",
-        "typeahead",
-        "dropdown",
-        "multiselect",
-        "tag",
-        "tagging"
-    ],
-    "license": "MIT",
-    "main": "dist/js/select2.js",
-    "maintainers": [
-        {
-            "name": "chrisjbaik"
-        },
-        {
-            "name": "kevin-brown"
-        }
-    ],
-    "name": "select2",
-    "optionalDependencies": {},
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/select2/select2.git"
-    },
-    "scripts": {},
-    "version": "4.0.3"
+    "bin": {}
 }
 ```
 
